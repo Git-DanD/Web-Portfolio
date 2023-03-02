@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Consolas;
+    src: url(font/Consolas-Font/CONSOLAB.ttf);
+}
+
+* {
+    font-family: Consolas;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* NavBar */
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+nav a {
+    float: right;
+    text-decoration: none;
+}
+
+.navItemName {
+    float: left;
+}
+
+nav a.active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+/* HomePage */
+
+#firstName,
+#lastName {
+    font-size: 250px;
+
+}
+
+#name {
+    text-align: center;
+}
+
+#lastName {
+    margin-top: -150px;
+    -webkit-text-stroke: 3px white;
+    -webkit-text-fill-color: transparent;
+}
+
+#homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#content1 {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+}
+
+#social {
+    display: flex;
+    gap: 50px;
+}
+
+#summary {
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homeBtn {
+    text-align: center;
+
+    padding-top: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    width: 217px;
+    height: 52px;
+
+    border-style: solid;
+    border-width: 4px;
+
+    text-decoration: none;
+    border-color: white;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.homeBtn:hover {
+    background-color: white;
+    color: rgb(12, 12, 12);
+}
+
+
+/*  projects page */
+
+#myProjects {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+#myTitle,
+#projectsTitle {
+    font-size: 50px;
+}
+
+#projectsTitle {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+}
+
+#cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.projectCard {
+    position: relative;
+
+    height: 250px;
+    width: 400px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.projectCard:hover {
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+#cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.type {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+    background-color: rgba(53, 53, 53, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.projectCard:hover .type {
+    display: absolute;
+    top: 0px;
+    border-radius: 10px;
+    backdrop-filter: blur(11px);
+}
+
+.projectCard:hover + .hidden {
+    display: block;
+    color: white;
+ }
+
+.type h3,
+h4,
+p {
+    padding-left: 10px;
+}
+
+.type h3 {
+    font-size: 13px;
+    color: rgb(185, 185, 185);
+}
