@@ -152,9 +152,18 @@ nav a.active {
 
 #cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
+
+
     margin-top: 50px;
+}
+
+.cardSection {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
 }
 
 .projectCard {
