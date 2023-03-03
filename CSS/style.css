@@ -13,29 +13,35 @@ body {
     background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    padding-bottom: 30px;
 }
 
 /* NavBar */
 
 #navbar {
     list-style-type: none;
+    gap: 20px;
+
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+
+    padding: 20px;
+    padding-top: 10px;
 }
 
 nav {
-    padding: 10px;
-    padding-bottom: 0px;
+    position: fixed;
+    width: 100%;
 }
 
 nav a {
-    float: right;
     text-decoration: none;
 }
 
 .navItemName {
-    float: left;
+    position: absolute;
+    left: 20px;
 }
 
 nav a.active {
@@ -48,7 +54,6 @@ nav a.active {
 #firstName,
 #lastName {
     font-size: 250px;
-
 }
 
 #name {
@@ -135,9 +140,9 @@ nav a.active {
 /*  projects page */
 
 #myProjects {
-    margin-top: 75px;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
 }
 
 #myTitle,
