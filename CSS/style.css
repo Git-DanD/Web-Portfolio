@@ -139,18 +139,19 @@ nav a.active {
 
 /*  projects page */
 
-#myProjects {
+#title {
     display: flex;
     justify-content: center;
+
     padding-top: 100px;
 }
 
-#myTitle,
-#projectsTitle {
+#firstTitle,
+#secondTitle {
     font-size: 50px;
 }
 
-#projectsTitle {
+#secondTitle {
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
 }
@@ -159,8 +160,6 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-
-
     margin-top: 50px;
 }
 
@@ -233,4 +232,10 @@ p {
 .type h3 {
     font-size: 13px;
     color: rgb(185, 185, 185);
+}
+
+/* contact page */
+#email_form {
+
+    justify-content: center;
 }

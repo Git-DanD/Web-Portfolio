@@ -15,14 +15,27 @@
         <nav>
             <ul id="navbar">
                 <a class="navItemName" href="index.html">Dat.Duong</a>
-                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
+        <div id="title">
+            <h1 id="firstTitle">Contact</h1>
+            <h1 id="secondTitle">Me</h1>
+        </div>
+
         <form action="/php/send_email.php">
-            
+            <div id="email_form">
+                <label for="user_email">Email:</label>
+                <input type="text" id="user_email" name="user_email" value="enter email..."
+                    style="color: black"><br><br>
+                <label for="email_message">message:</label>
+                <input type="text" id="email_message" name="email_message" value="enter message..."
+                    style="color: black"><br><br>
+                <input type="submit" value="Submit" style="color: black">
+            </div>
         </form>
 
     </main>
